@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>My Budget Tracker</h1>
+        <p>Track your income and expenses in one place.</p>
+
+        <!-- Section 1: Data Entry Workspace -->
+        <div class="add-expense">
+            <h2>Add Expense</h2>
+            <p>Add your expenses here.</p>
+
+            <label for="ename">Expense name:</label><br>
+            <input type="text" id="ename" name="ename"><br>
+
+            <label for="eamount">Expense amount:</label><br>
+            <input type="number" id="eamount" name="eamount"><br>
+
+            <label for="category">Expense Category:</label><br>
+            <input type="text" id="category" name="category"><br><br>
+        </div>
+
+        <!-- Section 2: Dedicated Display Container -->
+        <div class="your-expenses">
+            <h2>Your Expenses</h2>
+            <p class="placeholder-text">No expenses yet.</p>
+        </div>
+    </main>
+
+</body>
+</html>
