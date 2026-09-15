@@ -1,6 +1,6 @@
 # My Budget Tracker
 
-## Week 3 Assignment – Design the Visual Identity of Your Budget Tracker
+## Week 3 Assignment – Designing the Visual Identity of Budget Tracker
 
 ### Project Description
 
