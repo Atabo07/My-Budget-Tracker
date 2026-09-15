@@ -1,12 +1,12 @@
 # My Budget Tracker
 
-## Week 2 Assignment
+## Week 3 Assignment – Design the Visual Identity of Your Budget Tracker
 
 ### Project Description
 
-My Budget Tracker is a simple web application created using HTML and CSS. The project helps users record and view their expenses in an organized way.
+My Budget Tracker is a simple web application created using HTML and CSS. The project helps users record and view their expenses in an organized and easy-to-read way.
 
-This project was continued from the Week 1 Budget Tracker. In Week 2, I improved the project by adding an expense table, an upgraded expense form, multimedia content, an interactive instructions section, and advanced CSS selectors.
+This project was continued from Week 1 and Week 2. In Week 3, I focused on improving the visual identity of the Budget Tracker by creating a consistent color palette, adding custom fonts, improving typography, styling the expense form and table, and applying the CSS box model to create clear and organized visual sections.
 
 ---
 
@@ -14,6 +14,7 @@ This project was continued from the Week 1 Budget Tracker. In Week 2, I improved
 
 * HTML5
 * CSS3
+* Google Fonts
 * YouTube Embed
 * Visual Studio Code
 * Git and GitHub
@@ -52,11 +53,13 @@ It includes:
 
 ### 2. style.css
 
-The `style.css` file controls the appearance of the Budget Tracker.
+The `style.css` file controls the visual appearance of the Budget Tracker.
 
 It includes:
 
-* Page background and font styling
+* Consistent color palette
+* Custom Google Fonts
+* Typography styling
 * Form styling
 * Input and select styling
 * Button styling
@@ -65,18 +68,127 @@ It includes:
 * Alternating table row colors
 * Hover effects
 * Input focus effects
+* Rounded corners
+* Card-style sections
 * Video section styling
 * Instructions section styling
 
 ### 3. README.md
 
-This file explains the project, technologies used, features implemented, and the purpose of each project file.
+This file explains the project, technologies used, features implemented, and improvements made during the different weeks.
 
 ---
 
-## Week 2 Features
+# Week 3 Visual Design Improvements
 
-### 1. Expense Table
+## 1. Consistent Color Palette
+
+I selected a simple and consistent color palette for the Budget Tracker.
+
+The main colors are used for:
+
+* Page background
+* Main headings
+* Section headings
+* Table header
+* Add Expense button
+* Form elements
+* Borders and backgrounds
+
+The colors were chosen to create a clean, professional, and easy-to-read interface.
+
+---
+
+## 2. Custom Typography
+
+I added custom fonts using Google Fonts.
+
+The project uses:
+
+* **Montserrat** for headings and important titles
+* **Open Sans** for body text, labels, form controls, buttons, and table content
+
+Using different fonts for headings and body content creates a clear visual hierarchy and makes the application easier to read.
+
+---
+
+## 3. Styled Add Expense Form
+
+The Add Expense form was improved with:
+
+* Consistent spacing
+* Padding
+* Borders
+* Rounded corners
+* Styled input fields
+* Styled category dropdown
+* Focus effects
+* A clearly styled Add Expense button
+
+The form is presented as a separate card so that users can easily identify the data entry area.
+
+---
+
+## 4. Styled Expense Table
+
+The Expense Table was improved using CSS.
+
+The improvements include:
+
+* Styled table header
+* Borders around cells
+* Consistent padding
+* Alternating row colors
+* Hover effects
+* Clear table headings
+* Consistent typography
+
+These improvements make the expense records easier to read and understand.
+
+---
+
+## 5. CSS Box Model
+
+I intentionally applied the CSS box model throughout the project.
+
+I used:
+
+* `margin` to create space between sections
+* `padding` to create space inside sections
+* `border` to define different areas
+* `border-radius` to create rounded corners
+* `box-shadow` to create a card-like appearance
+
+The project contains three main visual cards:
+
+1. **Page Heading Card**
+2. **Add Expense Form Card**
+3. **Expense Table Card**
+
+This creates a more organized and professional layout.
+
+---
+
+## 6. Visual Hierarchy
+
+The design uses different font sizes and weights to make important information stand out.
+
+The hierarchy includes:
+
+* Large main heading for the project title
+* Medium-sized section headings
+* Clear labels for form controls
+* Readable body text
+* Clearly defined table headings
+* A visible Add Expense button
+
+This helps users understand the different sections of the Budget Tracker more easily.
+
+---
+
+# Week 2 Features
+
+## 1. Expense Table
 
 I replaced the "No expenses yet" placeholder with a properly structured HTML table.
 
@@ -99,13 +211,11 @@ The table contains four columns:
 | Movie       | KSh 700   | Entertainment | 2026-09-05 |
 | Mobile Data | KSh 500   | Other         | 2026-09-07 |
 
-The table is styled using borders, padding, a colored header, and alternating row colors.
-
 ---
 
 ## 2. Upgraded Add Expense Form
 
-The Add Expense section was improved by adding a proper `<form>` element.
+The Add Expense section contains a proper `<form>` element.
 
 The form contains:
 
@@ -123,7 +233,7 @@ The category dropdown contains five categories:
 4. Entertainment
 5. Other
 
-Each form control has a clear and matching `id` attribute so that JavaScript can be added in future weeks.
+Each form control has a clear and matching `id` attribute.
 
 ---
 
@@ -131,22 +241,7 @@ Each form control has a clear and matching `id` attribute so that JavaScript can
 
 I added an image near the main heading using the `<img>` element.
 
-The image includes:
-
-* `src`
-* `alt`
-* `width`
-
 I also added a YouTube video using an `<iframe>`.
-
-The iframe includes:
-
-* `width`
-* `height`
-* `src`
-* `title`
-* `frameborder`
-* `allowfullscreen`
 
 The video provides additional information related to budgeting and personal finance.
 
@@ -164,21 +259,13 @@ I added a collapsible section using:
 
 This section explains how users can use the Budget Tracker.
 
-I also added hover effects to the expense table rows. When the user moves the mouse over a row, its background changes.
-
-The Add Expense button also uses:
-
-```css
-cursor: pointer;
-```
-
-This displays a hand cursor when the user moves the mouse over the button.
+I also added hover effects to the expense table rows and the Add Expense button.
 
 ---
 
 ## 5. Advanced CSS Selectors
 
-I applied several advanced CSS selectors from the Week 2 lesson.
+The project uses several CSS selectors from the Week 2 lesson.
 
 ### Descendant Selector
 
@@ -188,7 +275,7 @@ I applied several advanced CSS selectors from the Week 2 lesson.
 }
 ```
 
-This styles the table cells inside the Your Expenses section.
+This styles table cells inside the Your Expenses section.
 
 ### Direct Child Selector
 
@@ -200,21 +287,21 @@ This styles the table cells inside the Your Expenses section.
 
 This targets the form that is a direct child of the Add Expense section.
 
-### Position Pseudo-Class
+### `:nth-child()` Pseudo-Class
 
 ```css
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f1f5f9;
 }
 ```
 
-This gives alternating background colors to the table rows.
+This creates alternating table row colors.
 
 ### Negation Pseudo-Class
 
 ```css
 input:not([type="submit"]) {
-    background-color: #ffffff;
+    background-color: #f8fafc;
 }
 ```
 
@@ -225,17 +312,17 @@ This applies styling to inputs that are not submit buttons.
 ```css
 input:focus,
 select:focus {
-    border: 2px solid #3498db;
+    border: 2px solid #0e7490;
 }
 ```
 
-This changes the border when the user clicks inside an input or select field.
+This changes the input border when the user selects an input or dropdown.
 
 ### Hover Pseudo-Class
 
 ```css
 tbody tr:hover {
-    background-color: #dfefff;
+    background-color: #d9f0f2;
 }
 ```
 
@@ -243,9 +330,9 @@ This changes the background of an expense row when the mouse moves over it.
 
 ---
 
-## Future Improvements
+# Future Improvements
 
-The Add Expense button does not currently add new expenses automatically because JavaScript will be introduced in a later week.
+The Add Expense button does not currently add new expenses automatically because JavaScript functionality will be introduced in a later week.
 
 Future improvements may include:
 
@@ -256,3 +343,4 @@ Future improvements may include:
 * Adding income tracking
 * Adding a budget summary
 * Saving expense data
+* Creating expense charts and reports
