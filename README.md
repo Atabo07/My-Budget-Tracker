@@ -1,12 +1,14 @@
-# My Budget Tracker
+# SpendWise Dashboard
 
-## Week 3 Assignment – Designing the Visual Identity of Budget Tracker
+## Week 4 Assignment – Rebuild the Tracker's Layout with Flexbox and Grid
 
 ### Project Description
 
-My Budget Tracker is a simple web application created using HTML and CSS. The project helps users record and view their expenses in an organized and easy-to-read way.
+SpendWise is a personal finance dashboard designed to help users view and organize their financial information in a clean and responsive interface.
 
-This project was continued from Week 1 and Week 2. In Week 3, I focused on improving the visual identity of the Budget Tracker by creating a consistent color palette, adding custom fonts, improving typography, styling the expense form and table, and applying the CSS box model to create clear and organized visual sections.
+This project was continued from the previous weeks of the Budget Tracker project. In Week 4, I rebuilt the layout into a modern dashboard shell using **CSS Grid and Flexbox**.
+
+The dashboard contains a sidebar navigation menu, a dashboard header, six financial category cards, and a recent expenses section. The financial information is static for this week because JavaScript functionality is not required yet.
 
 ---
 
@@ -14,8 +16,10 @@ This project was continued from Week 1 and Week 2. In Week 3, I focused on impro
 
 * HTML5
 * CSS3
+* CSS Grid
+* Flexbox
+* CSS Custom Properties
 * Google Fonts
-* YouTube Embed
 * Visual Studio Code
 * Git and GitHub
 
@@ -26,7 +30,7 @@ This project was continued from Week 1 and Week 2. In Week 3, I focused on impro
 The project contains the following files:
 
 ```text
-My-Budget-Tracker/
+SpendWise/
 │
 ├── index.html
 ├── style.css
@@ -35,312 +39,409 @@ My-Budget-Tracker/
 
 ### 1. index.html
 
-The `index.html` file contains the structure and content of the Budget Tracker.
+The `index.html` file contains the structure and content of the SpendWise Dashboard.
 
 It includes:
 
-* Main heading and introduction
-* Add Expense form
-* Expense name input
-* Expense amount input
-* Expense category dropdown
-* Expense date input
-* Add Expense button
-* Expense table
-* Sample expense records
-* How to use section
-* Budgeting YouTube video
+* SpendWise branding
+* Sidebar navigation
+* Dashboard header
+* Welcome section
+* Financial overview
+* Six financial category cards
+* Recent expenses section
+* Static financial information
 
 ### 2. style.css
 
-The `style.css` file controls the visual appearance of the Budget Tracker.
+The `style.css` file controls the layout, appearance, responsiveness, and interactions of the dashboard.
 
 It includes:
 
-* Consistent color palette
-* Custom Google Fonts
-* Typography styling
-* Form styling
-* Input and select styling
-* Button styling
-* Expense table styling
-* Table borders and padding
-* Alternating table row colors
+* Universal CSS reset
+* CSS custom properties
+* CSS Grid
+* Flexbox
+* Responsive design
+* Card styling
 * Hover effects
-* Input focus effects
-* Rounded corners
-* Card-style sections
-* Video section styling
-* Instructions section styling
+* Keyboard focus effects
+* Typography
+* Colors
+* Spacing
+* Borders
+* Shadows
+* Dark theme support
 
 ### 3. README.md
 
-This file explains the project, technologies used, features implemented, and improvements made during the different weeks.
+This file explains the project, technologies used, dashboard structure, CSS techniques, responsive design, and improvements made during Week 4.
 
 ---
 
-# Week 3 Visual Design Improvements
+# Week 4 Dashboard Features
 
-## 1. Consistent Color Palette
+## 1. Sidebar Navigation
 
-I selected a simple and consistent color palette for the Budget Tracker.
+I created a sidebar navigation menu for the SpendWise Dashboard.
 
-The main colors are used for:
+The sidebar contains:
 
-* Page background
-* Main headings
-* Section headings
-* Table header
-* Add Expense button
-* Form elements
-* Borders and backgrounds
+1. Dashboard
+2. Expenses
+3. Income
+4. Savings
+5. Reports
+6. Settings
 
-The colors were chosen to create a clean, professional, and easy-to-read interface.
+The navigation items are arranged using **Flexbox**.
 
----
-
-## 2. Custom Typography
-
-I added custom fonts using Google Fonts.
-
-The project uses:
-
-* **Montserrat** for headings and important titles
-* **Open Sans** for body text, labels, form controls, buttons, and table content
-
-Using different fonts for headings and body content creates a clear visual hierarchy and makes the application easier to read.
+The active Dashboard item is visually highlighted to make the current page clear.
 
 ---
 
-## 3. Styled Add Expense Form
+## 2. Dashboard Header
 
-The Add Expense form was improved with:
+I created a dashboard header containing:
 
-* Consistent spacing
-* Padding
-* Borders
-* Rounded corners
-* Styled input fields
-* Styled category dropdown
-* Focus effects
-* A clearly styled Add Expense button
+* SpendWise Dashboard title
+* Short description
+* Welcome message
+* Personal Budget information
 
-The form is presented as a separate card so that users can easily identify the data entry area.
+The header uses **Flexbox** to arrange the content horizontally on larger screens.
 
 ---
 
-## 4. Styled Expense Table
+## 3. Financial Category Cards
 
-The Expense Table was improved using CSS.
+The dashboard contains six financial category cards with realistic static information.
 
-The improvements include:
+The categories are:
 
-* Styled table header
-* Borders around cells
-* Consistent padding
-* Alternating row colors
-* Hover effects
-* Clear table headings
-* Consistent typography
+| Category      | Example Information |
+| ------------- | ------------------- |
+| Food          | KSh 1,500           |
+| Transport     | KSh 800             |
+| Rent          | KSh 8,000           |
+| Entertainment | KSh 700             |
+| Savings       | KSh 5,000           |
+| Utilities     | KSh 1,200           |
 
-These improvements make the expense records easier to read and understand.
+Each card contains:
 
----
+* Category icon
+* Category name
+* Amount
+* Description
+* Transaction or budget information
 
-## 5. CSS Box Model
-
-I intentionally applied the CSS box model throughout the project.
-
-I used:
-
-* `margin` to create space between sections
-* `padding` to create space inside sections
-* `border` to define different areas
-* `border-radius` to create rounded corners
-* `box-shadow` to create a card-like appearance
-
-The project contains three main visual cards:
-
-1. **Page Heading Card**
-2. **Add Expense Form Card**
-3. **Expense Table Card**
-
-This creates a more organized and professional layout.
+The cards use **Flexbox** internally to organize their content.
 
 ---
 
-## 6. Visual Hierarchy
+# CSS Grid Implementation
 
-The design uses different font sizes and weights to make important information stand out.
+CSS Grid is used for the overall dashboard layout.
 
-The hierarchy includes:
+The main dashboard uses:
 
-* Large main heading for the project title
-* Medium-sized section headings
-* Clear labels for form controls
-* Readable body text
-* Clearly defined table headings
-* A visible Add Expense button
+```css
+.dashboard {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+}
+```
 
-This helps users understand the different sections of the Budget Tracker more easily.
+This creates two main areas:
 
----
+1. Sidebar
+2. Main dashboard content
 
-# Week 2 Features
+CSS Grid is also used to arrange the six financial cards into multiple columns.
 
-## 1. Expense Table
+```css
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+```
 
-I replaced the "No expenses yet" placeholder with a properly structured HTML table.
-
-The table uses:
-
-* `<table>`
-* `<thead>`
-* `<tbody>`
-* `<tr>`
-* `<th>`
-* `<td>`
-
-The table contains four columns:
-
-| Name        | Amount    | Category      | Date       |
-| ----------- | --------- | ------------- | ---------- |
-| Groceries   | KSh 1,500 | Food          | 2026-09-01 |
-| Bus Fare    | KSh 300   | Transport     | 2026-09-02 |
-| House Rent  | KSh 8,000 | Rent          | 2026-09-03 |
-| Movie       | KSh 700   | Entertainment | 2026-09-05 |
-| Mobile Data | KSh 500   | Other         | 2026-09-07 |
+This allows the cards to be displayed in a clean dashboard-style layout.
 
 ---
 
-## 2. Upgraded Add Expense Form
+# Flexbox Implementation
 
-The Add Expense section contains a proper `<form>` element.
+Flexbox is used in several areas of the dashboard.
 
-The form contains:
+### Sidebar
 
-* Expense name input
-* Expense amount input
+The sidebar navigation uses Flexbox to arrange the navigation items vertically.
+
+```css
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+```
+
+### Header
+
+The dashboard header uses Flexbox to position the heading and welcome information.
+
+```css
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+```
+
+### Financial Cards
+
+The content inside each financial card uses Flexbox.
+
+```css
+.financial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+```
+
+This keeps the card content organized and evenly spaced.
+
+---
+
+# CSS Custom Properties
+
+I created a theme using CSS custom properties inside the `:root` selector.
+
+The variables include:
+
+```css
+:root {
+    --brand-color: #164e63;
+    --accent-color: #15803d;
+    --surface-color: #ffffff;
+    --background-color: #eef4f8;
+    --primary-text: #263238;
+    --secondary-text: #64748b;
+}
+```
+
+These variables are reused throughout the stylesheet.
+
+This makes it easier to maintain a consistent color theme and change the design in the future.
+
+---
+
+# Responsive Design
+
+The dashboard is designed to work on both large and small screens.
+
+A media query is used below **768px**:
+
+```css
+@media (max-width: 767px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+```
+
+On smaller screens:
+
+* The sidebar and main content use a single-column layout.
+* The financial cards are displayed in one column.
+* The dashboard header becomes vertically arranged.
+* Navigation items become more compact.
+* The content padding is reduced.
+
+The responsive layout can be tested using the browser's **DevTools Device Toolbar**.
+
+---
+
+# Card Micro-Interactions
+
+I added subtle animations to the financial cards to improve the user experience.
+
+The cards respond to both:
+
+* Mouse hover
+* Keyboard focus
+
+The animation uses `transform` and `box-shadow`.
+
+```css
+.financial-card:hover,
+.financial-card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+```
+
+The transition duration is:
+
+```css
+transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+```
+
+The animation lasts **200 milliseconds**, which is within the required maximum of 250 milliseconds.
+
+---
+
+# Keyboard Accessibility
+
+I added keyboard focus styling to the navigation and dashboard cards.
+
+For example:
+
+```css
+.nav-item:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+```
+
+The financial cards also use:
+
+```css
+.financial-card:focus-visible {
+    outline: 3px solid var(--accent-color);
+}
+```
+
+This makes interactive areas easier to identify when navigating using a keyboard.
+
+---
+
+# Dark Theme
+
+As a stretch goal, I added support for the user's preferred dark color scheme.
+
+The dark theme uses:
+
+```css
+@media (prefers-color-scheme: dark) {
+    :root {
+        --brand-color: #67e8f9;
+        --accent-color: #4ade80;
+        --surface-color: #17212b;
+        --background-color: #0f1720;
+        --primary-text: #f1f5f9;
+        --secondary-text: #a8b3c2;
+    }
+}
+```
+
+The dark theme overrides the CSS custom properties rather than rewriting the entire stylesheet.
+
+---
+
+# No Absolute Positioning
+
+The dashboard layout does not use absolute positioning.
+
+Instead, the project uses:
+
+* CSS Grid for the main page structure
+* CSS Grid for the financial cards
+* Flexbox for navigation
+* Flexbox for the header
+* Flexbox for card content
+* Flexbox for the recent expenses section
+
+This makes the layout easier to maintain and responsive across different screen sizes.
+
+---
+
+# Previous Week Features
+
+The SpendWise Dashboard was developed from the previous Budget Tracker project.
+
+### Week 2
+
+The project originally included:
+
+* Expense form
 * Expense category dropdown
 * Expense date input
-* Add Expense button
+* Expense table
+* Sample expense records
+* YouTube budgeting video
+* Interactive instructions section
+* Advanced CSS selectors
 
-The category dropdown contains five categories:
+### Week 3
 
-1. Food
-2. Transport
-3. Rent
-4. Entertainment
-5. Other
+The visual identity was improved with:
 
-Each form control has a clear and matching `id` attribute.
+* Consistent color palette
+* Google Fonts
+* Improved typography
+* Styled form
+* Styled expense table
+* Rounded corners
+* Borders
+* Shadows
+* CSS box model
+* Card-style sections
+* Hover and focus effects
 
----
+### Week 4
 
-## 3. Multimedia Content
+The project was redesigned into the SpendWise Dashboard Shell using:
 
-I added an image near the main heading using the `<img>` element.
-
-I also added a YouTube video using an `<iframe>`.
-
-The video provides additional information related to budgeting and personal finance.
-
----
-
-## 4. Interactive Elements
-
-I added a collapsible section using:
-
-```html
-<details>
-    <summary>How to use this tracker</summary>
-</details>
-```
-
-This section explains how users can use the Budget Tracker.
-
-I also added hover effects to the expense table rows and the Add Expense button.
+* CSS Grid
+* Flexbox
+* CSS custom properties
+* Responsive design
+* Financial category cards
+* Sidebar navigation
+* Dashboard header
+* Card micro-interactions
+* Dark theme support
 
 ---
 
-## 5. Advanced CSS Selectors
+# Static Dashboard Information
 
-The project uses several CSS selectors from the Week 2 lesson.
+The dashboard currently uses static information because JavaScript functionality is not required for Week 4.
 
-### Descendant Selector
+The current dashboard displays example financial information such as:
 
-```css
-.your-expenses td {
-    font-size: 14px;
-}
-```
+* Food spending
+* Transport spending
+* Rent
+* Entertainment
+* Savings
+* Utilities
+* Recent expenses
 
-This styles table cells inside the Your Expenses section.
-
-### Direct Child Selector
-
-```css
-.add-expense > form {
-    margin-top: 20px;
-}
-```
-
-This targets the form that is a direct child of the Add Expense section.
-
-### `:nth-child()` Pseudo-Class
-
-```css
-tr:nth-child(even) {
-    background-color: #f1f5f9;
-}
-```
-
-This creates alternating table row colors.
-
-### Negation Pseudo-Class
-
-```css
-input:not([type="submit"]) {
-    background-color: #f8fafc;
-}
-```
-
-This applies styling to inputs that are not submit buttons.
-
-### Focus Pseudo-Class
-
-```css
-input:focus,
-select:focus {
-    border: 2px solid #0e7490;
-}
-```
-
-This changes the input border when the user selects an input or dropdown.
-
-### Hover Pseudo-Class
-
-```css
-tbody tr:hover {
-    background-color: #d9f0f2;
-}
-```
-
-This changes the background of an expense row when the mouse moves over it.
+Future JavaScript functionality will allow this information to become dynamic.
 
 ---
 
 # Future Improvements
 
-The Add Expense button does not currently add new expenses automatically because JavaScript functionality will be introduced in a later week.
-
 Future improvements may include:
 
 * Adding JavaScript functionality
-* Automatically adding new expenses to the table
+* Making the Add Expense form functional
+* Automatically adding new expenses
 * Calculating total expenses
-* Validating form input
-* Adding income tracking
-* Adding a budget summary
-* Saving expense data
-* Creating expense charts and reports
+* Tracking income
+* Calculating savings
+* Adding charts and reports
+* Saving data using local storage
+* Adding expense filtering
+* Adding expense categories dynamically
+* Creating a complete personal finance management system
