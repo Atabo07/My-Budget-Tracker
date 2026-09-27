@@ -1,17 +1,30 @@
 // SpendWise - Week 5 JavaScript Foundation
 
-// Variables for budgeting information
+
+// ========================================
+// VARIABLES FOR BUDGETING INFORMATION
+// ========================================
+
 let budget = 0;
 let totalExpenses = 0;
 let remainingBalance = 0;
 
-// Function to calculate the remaining balance
+
+// ========================================
+// FUNCTION TO CALCULATE REMAINING BALANCE
+// ========================================
+
 function calculateBalance(budget, expenses) {
     return budget - expenses;
 }
 
-// Function to collect the user's budget
+
+// ========================================
+// FUNCTION TO COLLECT USER'S BUDGET
+// ========================================
+
 function getBudget() {
+
     let userBudget = prompt("Enter your monthly budget:");
 
     budget = Number(userBudget);
@@ -24,8 +37,13 @@ function getBudget() {
     return budget;
 }
 
-// Function to collect the user's expenses
+
+// ========================================
+// FUNCTION TO COLLECT USER'S EXPENSES
+// ========================================
+
 function getExpenses() {
+
     let userExpenses = prompt("Enter your total expenses:");
 
     totalExpenses = Number(userExpenses);
@@ -38,23 +56,47 @@ function getExpenses() {
     return totalExpenses;
 }
 
-// Function to display the budget summary
+
+// ========================================
+// FUNCTION TO DISPLAY BUDGET SUMMARY
+// ========================================
+
 function displayBudgetSummary() {
-    remainingBalance = calculateBalance(budget, totalExpenses);
+
+    remainingBalance = calculateBalance(
+        budget,
+        totalExpenses
+    );
 
     console.log("===== SpendWise Budget Summary =====");
+
     console.log("Monthly Budget: KES " + budget);
+
     console.log("Total Expenses: KES " + totalExpenses);
+
     console.log("Remaining Balance: KES " + remainingBalance);
 
     if (remainingBalance >= 0) {
-        console.log("Status: You are within your budget.");
+
+        console.log(
+            "Status: You are within your budget."
+        );
+
     } else {
-        console.log("Status: You have exceeded your budget.");
+
+        console.log(
+            "Status: You have exceeded your budget."
+        );
     }
 }
 
-// Run the SpendWise functions
+
+// ========================================
+// RUN THE SPENDWISE FUNCTIONS
+// ========================================
+
 getBudget();
+
 getExpenses();
+
 displayBudgetSummary();
