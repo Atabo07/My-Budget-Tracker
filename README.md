@@ -1,109 +1,342 @@
-# SpendWise – Week 5: JavaScript Foundation
+# SpendWise – Personal Finance Tracker
 
-## About SpendWise
+## Project Description
+SpendWise is a responsive personal finance tracker built with HTML, CSS and JavaScript. It helps users record income and expenses, set a monthly budget, monitor savings goals and review spending reports.
 
-SpendWise is a budget tracking web application that helps users keep track of their budget and expenses.
+## Modules
+- **Dashboard:** financial summary, budget progress, savings progress and recent transactions.
+- **Expenses:** add, search, filter and delete expense records.
+- **Income:** record and delete income.
+- **Savings:** create a savings target and update the amount saved.
+- **Reports:** view category spending chart and financial summaries; export transactions to CSV.
+- **Learning Centre:** embedded budgeting video lesson.
+- **Settings:** choose currency, set monthly budget, download a JSON backup and clear local data.
 
-In Week 5, JavaScript was added to the existing SpendWise project. The JavaScript allows the application to collect budgeting information from the user, store data, perform calculations, and display the results in the browser console.
+## Technologies Used
+- HTML5 for page structure and forms.
+- CSS3 for styling and responsive layout.
+- JavaScript for arrays, loops, conditionals, event listeners, DOM manipulation and calculations.
+- Browser Local Storage for saving data on the current device.
+- Chart.js for the category doughnut chart.
+- YouTube embed for the budgeting lesson.
 
-## JavaScript Concepts Implemented
+## How to Run
+1. Download and extract the project folder.
+2. Open the folder in Visual Studio Code.
+3. Open `index.html` in a browser, or use the VS Code Live Server extension.
+4. Use the sidebar to open each module.
+5. Set your budget in **Settings**, then add income and expenses.
 
-The Week 5 project demonstrates:
+## Data and Privacy
+SpendWise stores records in the browser's Local Storage. Data does not automatically sync between devices and may be lost if browser site data is cleared. The backup button downloads a JSON copy. Do not enter bank PINs, passwords or other sensitive credentials.
 
-* Variables
-* Data types
-* User input
-* Type conversion
-* Calculations
-* Functions
-* Conditional statements
-* Console output
+## Video
+The Learning Centre embeds a beginner budgeting video from YouTube. An internet connection is required to play it.
 
-## Variables
+## Deployment
+For Netlify deployment, push this folder to a public GitHub repository, import the repository into Netlify, and deploy the project. The publish directory is the project root; no build command is required for this static site. After deployment, add the live Netlify URL here:
 
-Variables are used to store important budgeting information.
+**Live website:** Add your Netlify URL after deployment.
 
-```javascript
-let budget = 0;
-let totalExpenses = 0;
-let remainingBalance = 0;
-```
+## GitHub Repository
+Add your public GitHub repository URL here after creating it.
 
-The `budget` variable stores the user's budget.
+## Testing Checklist
+- [ ] Set and save a monthly budget.
+- [ ] Add an expense and confirm dashboard totals update.
+- [ ] Search and filter expenses.
+- [ ] Delete an expense.
+- [ ] Add and delete income.
+- [ ] Set and update a savings goal.
+- [ ] View the reports chart and export CSV.
+- [ ] Refresh the browser and confirm records remain.
+- [ ] Test on a phone-sized screen.
+- [ ] Deploy to Netlify and verify the live website.
 
-The `totalExpenses` variable stores the user's total expenses.
+## Challenges and Lessons Learned
+This project demonstrates how JavaScript arrays store multiple records, loops calculate totals, conditionals evaluate budget status, event listeners respond to form submissions and clicks, and DOM manipulation updates the page. Local Storage keeps data available after refreshing the same browser.
+# SpendWise – Personal Finance Tracker
 
-The `remainingBalance` variable stores the amount left after expenses are deducted from the budget.
+## Project Description
+SpendWise is a responsive personal finance tracker built with HTML, CSS and JavaScript. It helps users record income and expenses, set a monthly budget, monitor savings goals and review spending reports.
 
-## Collecting User Input
+## Modules
+- **Dashboard:** financial summary, budget progress, savings progress and recent transactions.
+- **Expenses:** add, search, filter and delete expense records.
+- **Income:** record and delete income.
+- **Savings:** create a savings target and update the amount saved.
+- **Reports:** view category spending chart and financial summaries; export transactions to CSV.
+- **Learning Centre:** embedded budgeting video lesson.
+- **Settings:** choose currency, set monthly budget, download a JSON backup and clear local data.
 
-SpendWise uses the JavaScript `prompt()` function to collect information from the user.
+## Technologies Used
+- HTML5 for page structure and forms.
+- CSS3 for styling and responsive layout.
+- JavaScript for arrays, loops, conditionals, event listeners, DOM manipulation and calculations.
+- Browser Local Storage for saving data on the current device.
+- Chart.js for the category doughnut chart.
+- YouTube embed for the budgeting lesson.
 
-```javascript
-let userBudget = prompt("Enter your monthly budget:");
-```
+## How to Run
+1. Download and extract the project folder.
+2. Open the folder in Visual Studio Code.
+3. Open `index.html` in a browser, or use the VS Code Live Server extension.
+4. Use the sidebar to open each module.
+5. Set your budget in **Settings**, then add income and expenses.
 
-The input is converted into a number using `Number()`.
+## Data and Privacy
+SpendWise stores records in the browser's Local Storage. Data does not automatically sync between devices and may be lost if browser site data is cleared. The backup button downloads a JSON copy. Do not enter bank PINs, passwords or other sensitive credentials.
 
-```javascript
-budget = Number(userBudget);
-```
+## Video
+The Learning Centre embeds a beginner budgeting video from YouTube. An internet connection is required to play it.
 
-The same method is used to collect and convert the user's expenses.
+## Deployment
+For Netlify deployment, push this folder to a public GitHub repository, import the repository into Netlify, and deploy the project. The publish directory is the project root; no build command is required for this static site. After deployment, add the live Netlify URL here:
 
-## Budget Calculations
+**Live website:** Add your Netlify URL after deployment.
 
-The remaining balance is calculated by subtracting total expenses from the budget.
+## GitHub Repository
+Add your public GitHub repository URL here after creating it.
 
-```javascript
-function calculateBalance(budget, expenses) {
-    return budget - expenses;
-}
-```
+## Testing Checklist
+- [ ] Set and save a monthly budget.
+- [ ] Add an expense and confirm dashboard totals update.
+- [ ] Search and filter expenses.
+- [ ] Delete an expense.
+- [ ] Add and delete income.
+- [ ] Set and update a savings goal.
+- [ ] View the reports chart and export CSV.
+- [ ] Refresh the browser and confirm records remain.
+- [ ] Test on a phone-sized screen.
+- [ ] Deploy to Netlify and verify the live website.
 
-For example:
+## Challenges and Lessons Learned
+This project demonstrates how JavaScript arrays store multiple records, loops calculate totals, conditionals evaluate budget status, event listeners respond to form submissions and clicks, and DOM manipulation updates the page. Local Storage keeps data available after refreshing the same browser.
+# SpendWise – Personal Finance Tracker
 
-```text
-Budget = KES 30,000
-Expenses = KES 18,500
+## Project Description
+SpendWise is a responsive personal finance tracker built with HTML, CSS and JavaScript. It helps users record income and expenses, set a monthly budget, monitor savings goals and review spending reports.
 
-Remaining Balance = KES 11,500
-```
+## Modules
+- **Dashboard:** financial summary, budget progress, savings progress and recent transactions.
+- **Expenses:** add, search, filter and delete expense records.
+- **Income:** record and delete income.
+- **Savings:** create a savings target and update the amount saved.
+- **Reports:** view category spending chart and financial summaries; export transactions to CSV.
+- **Learning Centre:** embedded budgeting video lesson.
+- **Settings:** choose currency, set monthly budget, download a JSON backup and clear local data.
 
-## Functions
+## Technologies Used
+- HTML5 for page structure and forms.
+- CSS3 for styling and responsive layout.
+- JavaScript for arrays, loops, conditionals, event listeners, DOM manipulation and calculations.
+- Browser Local Storage for saving data on the current device.
+- Chart.js for the category doughnut chart.
+- YouTube embed for the budgeting lesson.
 
-Functions help organize the JavaScript code into reusable sections.
+## How to Run
+1. Download and extract the project folder.
+2. Open the folder in Visual Studio Code.
+3. Open `index.html` in a browser, or use the VS Code Live Server extension.
+4. Use the sidebar to open each module.
+5. Set your budget in **Settings**, then add income and expenses.
 
-The project uses the following functions:
+## Data and Privacy
+SpendWise stores records in the browser's Local Storage. Data does not automatically sync between devices and may be lost if browser site data is cleared. The backup button downloads a JSON copy. Do not enter bank PINs, passwords or other sensitive credentials.
 
-* `calculateBalance()` – calculates the remaining balance.
-* `getBudget()` – collects the user's budget.
-* `getExpenses()` – collects the user's expenses.
-* `displayBudgetSummary()` – displays the budget results in the console.
+## Video
+The Learning Centre embeds a beginner budgeting video from YouTube. An internet connection is required to play it.
 
-## Displaying Results
+## Deployment
+For Netlify deployment, push this folder to a public GitHub repository, import the repository into Netlify, and deploy the project. The publish directory is the project root; no build command is required for this static site. After deployment, add the live Netlify URL here:
 
-The results are displayed in the browser console using `console.log()`.
+**Live website:** Add your Netlify URL after deployment.
 
-The application displays:
+## GitHub Repository
+Add your public GitHub repository URL here after creating it.
 
-* Monthly budget
-* Total expenses
-* Remaining balance
-* Budget status
+## Testing Checklist
+- [ ] Set and save a monthly budget.
+- [ ] Add an expense and confirm dashboard totals update.
+- [ ] Search and filter expenses.
+- [ ] Delete an expense.
+- [ ] Add and delete income.
+- [ ] Set and update a savings goal.
+- [ ] View the reports chart and export CSV.
+- [ ] Refresh the browser and confirm records remain.
+- [ ] Test on a phone-sized screen.
+- [ ] Deploy to Netlify and verify the live website.
 
-## Project Files
+## Challenges and Lessons Learned
+This project demonstrates how JavaScript arrays store multiple records, loops calculate totals, conditionals evaluate budget status, event listeners respond to form submissions and clicks, and DOM manipulation updates the page. Local Storage keeps data available after refreshing the same browser.
+# SpendWise – Personal Finance Tracker
 
-```text
-SpendWise/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+## Project Description
+SpendWise is a responsive personal finance tracker built with HTML, CSS and JavaScript. It helps users record income and expenses, set a monthly budget, monitor savings goals and review spending reports.
 
-## Conclusion
+## Modules
+- **Dashboard:** financial summary, budget progress, savings progress and recent transactions.
+- **Expenses:** add, search, filter and delete expense records.
+- **Income:** record and delete income.
+- **Savings:** create a savings target and update the amount saved.
+- **Reports:** view category spending chart and financial summaries; export transactions to CSV.
+- **Learning Centre:** embedded budgeting video lesson.
+- **Settings:** choose currency, set monthly budget, download a JSON backup and clear local data.
 
-The Week 5 JavaScript foundation changes SpendWise from a purely visual application into an application that can process budgeting data.
+## Technologies Used
+- HTML5 for page structure and forms.
+- CSS3 for styling and responsive layout.
+- JavaScript for arrays, loops, conditionals, event listeners, DOM manipulation and calculations.
+- Browser Local Storage for saving data on the current device.
+- Chart.js for the category doughnut chart.
+- YouTube embed for the budgeting lesson.
 
-Users can enter their budget and expenses, while JavaScript stores the information, performs calculations, and displays the results in the browser console.
+## How to Run
+1. Download and extract the project folder.
+2. Open the folder in Visual Studio Code.
+3. Open `index.html` in a browser, or use the VS Code Live Server extension.
+4. Use the sidebar to open each module.
+5. Set your budget in **Settings**, then add income and expenses.
+
+## Data and Privacy
+SpendWise stores records in the browser's Local Storage. Data does not automatically sync between devices and may be lost if browser site data is cleared. The backup button downloads a JSON copy. Do not enter bank PINs, passwords or other sensitive credentials.
+
+## Video
+The Learning Centre embeds a beginner budgeting video from YouTube. An internet connection is required to play it.
+
+## Deployment
+For Netlify deployment, push this folder to a public GitHub repository, import the repository into Netlify, and deploy the project. The publish directory is the project root; no build command is required for this static site. After deployment, add the live Netlify URL here:
+
+**Live website:** Add your Netlify URL after deployment.
+
+## GitHub Repository
+Add your public GitHub repository URL here after creating it.
+
+## Testing Checklist
+- [ ] Set and save a monthly budget.
+- [ ] Add an expense and confirm dashboard totals update.
+- [ ] Search and filter expenses.
+- [ ] Delete an expense.
+- [ ] Add and delete income.
+- [ ] Set and update a savings goal.
+- [ ] View the reports chart and export CSV.
+- [ ] Refresh the browser and confirm records remain.
+- [ ] Test on a phone-sized screen.
+- [ ] Deploy to Netlify and verify the live website.
+
+## Challenges and Lessons Learned
+This project demonstrates how JavaScript arrays store multiple records, loops calculate totals, conditionals evaluate budget status, event listeners respond to form submissions and clicks, and DOM manipulation updates the page. Local Storage keeps data available after refreshing the same browser.
+# SpendWise – Personal Finance Tracker
+
+## Project Description
+SpendWise is a responsive personal finance tracker built with HTML, CSS and JavaScript. It helps users record income and expenses, set a monthly budget, monitor savings goals and review spending reports.
+
+## Modules
+- **Dashboard:** financial summary, budget progress, savings progress and recent transactions.
+- **Expenses:** add, search, filter and delete expense records.
+- **Income:** record and delete income.
+- **Savings:** create a savings target and update the amount saved.
+- **Reports:** view category spending chart and financial summaries; export transactions to CSV.
+- **Learning Centre:** embedded budgeting video lesson.
+- **Settings:** choose currency, set monthly budget, download a JSON backup and clear local data.
+
+## Technologies Used
+- HTML5 for page structure and forms.
+- CSS3 for styling and responsive layout.
+- JavaScript for arrays, loops, conditionals, event listeners, DOM manipulation and calculations.
+- Browser Local Storage for saving data on the current device.
+- Chart.js for the category doughnut chart.
+- YouTube embed for the budgeting lesson.
+
+## How to Run
+1. Download and extract the project folder.
+2. Open the folder in Visual Studio Code.
+3. Open `index.html` in a browser, or use the VS Code Live Server extension.
+4. Use the sidebar to open each module.
+5. Set your budget in **Settings**, then add income and expenses.
+
+## Data and Privacy
+SpendWise stores records in the browser's Local Storage. Data does not automatically sync between devices and may be lost if browser site data is cleared. The backup button downloads a JSON copy. Do not enter bank PINs, passwords or other sensitive credentials.
+
+## Video
+The Learning Centre embeds a beginner budgeting video from YouTube. An internet connection is required to play it.
+
+## Deployment
+For Netlify deployment, push this folder to a public GitHub repository, import the repository into Netlify, and deploy the project. The publish directory is the project root; no build command is required for this static site. After deployment, add the live Netlify URL here:
+
+**Live website:** Add your Netlify URL after deployment.
+
+## GitHub Repository
+Add your public GitHub repository URL here after creating it.
+
+## Testing Checklist
+- [ ] Set and save a monthly budget.
+- [ ] Add an expense and confirm dashboard totals update.
+- [ ] Search and filter expenses.
+- [ ] Delete an expense.
+- [ ] Add and delete income.
+- [ ] Set and update a savings goal.
+- [ ] View the reports chart and export CSV.
+- [ ] Refresh the browser and confirm records remain.
+- [ ] Test on a phone-sized screen.
+- [ ] Deploy to Netlify and verify the live website.
+
+## Challenges and Lessons Learned
+This project demonstrates how JavaScript arrays store multiple records, loops calculate totals, conditionals evaluate budget status, event listeners respond to form submissions and clicks, and DOM manipulation updates the page. Local Storage keeps data available after refreshing the same browser.
+# SpendWise – Personal Finance Tracker
+
+## Project Description
+SpendWise is a responsive personal finance tracker built with HTML, CSS and JavaScript. It helps users record income and expenses, set a monthly budget, monitor savings goals and review spending reports.
+
+## Modules
+- **Dashboard:** financial summary, budget progress, savings progress and recent transactions.
+- **Expenses:** add, search, filter and delete expense records.
+- **Income:** record and delete income.
+- **Savings:** create a savings target and update the amount saved.
+- **Reports:** view category spending chart and financial summaries; export transactions to CSV.
+- **Learning Centre:** embedded budgeting video lesson.
+- **Settings:** choose currency, set monthly budget, download a JSON backup and clear local data.
+
+## Technologies Used
+- HTML5 for page structure and forms.
+- CSS3 for styling and responsive layout.
+- JavaScript for arrays, loops, conditionals, event listeners, DOM manipulation and calculations.
+- Browser Local Storage for saving data on the current device.
+- Chart.js for the category doughnut chart.
+- YouTube embed for the budgeting lesson.
+
+## How to Run
+1. Download and extract the project folder.
+2. Open the folder in Visual Studio Code.
+3. Open `index.html` in a browser, or use the VS Code Live Server extension.
+4. Use the sidebar to open each module.
+5. Set your budget in **Settings**, then add income and expenses.
+
+## Data and Privacy
+SpendWise stores records in the browser's Local Storage. Data does not automatically sync between devices and may be lost if browser site data is cleared. The backup button downloads a JSON copy. Do not enter bank PINs, passwords or other sensitive credentials.
+
+## Video
+The Learning Centre embeds a beginner budgeting video from YouTube. An internet connection is required to play it.
+
+## Deployment
+For Netlify deployment, push this folder to a public GitHub repository, import the repository into Netlify, and deploy the project. The publish directory is the project root; no build command is required for this static site. After deployment, add the live Netlify URL here:
+
+**Live website:** Add your Netlify URL after deployment.
+
+## GitHub Repository
+Add your public GitHub repository URL here after creating it.
+
+## Testing Checklist
+- [ ] Set and save a monthly budget.
+- [ ] Add an expense and confirm dashboard totals update.
+- [ ] Search and filter expenses.
+- [ ] Delete an expense.
+- [ ] Add and delete income.
+- [ ] Set and update a savings goal.
+- [ ] View the reports chart and export CSV.
+- [ ] Refresh the browser and confirm records remain.
+- [ ] Test on a phone-sized screen.
+- [ ] Deploy to Netlify and verify the live website.
+
+## Challenges and Lessons Learned
+This project demonstrates how JavaScript arrays store multiple records, loops calculate totals, conditionals evaluate budget status, event listeners respond to form submissions and clicks, and DOM manipulation updates the page. Local Storage keeps data available after refreshing the same browser.
